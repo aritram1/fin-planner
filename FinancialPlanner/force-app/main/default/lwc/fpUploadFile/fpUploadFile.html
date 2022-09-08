@@ -1,0 +1,38 @@
+<template>
+    <div class="slds-grid"> 
+        <div>
+            <lightning-button variant="brand" label="Click" title="Click" onclick={handleClick}></lightning-button>
+            <div>{result}</div>
+        </div>    
+        <div class="slds-col slds-size_1-of-2 slds-align_absolute-center">
+            <lightning-file-upload
+                label="Upload statement"
+                name="fileUploader"
+                accept={acceptedFormats}
+                onuploadfinished={handleUploadFinished}
+                multiple>
+            </lightning-file-upload>
+        </div>
+    </div>
+
+    <template if:true={loaded}>
+        <div class="slds-m-top_medium">
+            <div class="slds-align_absolute-center">
+                <lightning-button variant="brand" label="Save" title="Save" onclick={handleSave}></lightning-button>
+            </div>
+            <div class="slds-m-top_medium">
+                <lightning-datatable
+                    key-field="chqRefNumber"
+                    data={transactions}
+                    columns={columns}
+                    onrowaction={handleRowAction}>
+                </lightning-datatable>
+            </div>
+        </div>
+    </template>
+
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+
+</template>
