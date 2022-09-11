@@ -37,5 +37,8 @@
     "**/{aura,lwc}/**": [
       "eslint"
     ]
+  },
+  "dependencies": {
+    "pdfreader": "^2.0.0"
   }
 }

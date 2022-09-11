@@ -1,3 +1,9 @@
-*{
-    box-sizing: border-box;    
+* {
+  box-sizing: border-box;
+}
+.combo {
+  margin: 5px 0px;
+}
+.chartContent {
+  padding: 5px;
 }

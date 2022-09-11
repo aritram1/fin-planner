@@ -4,6 +4,8 @@
     <types>
         <members>FP_Transaction__c</members>
         <members>FP_Investment__c</members>
+        <members>FP_Instrument__c</members>
+        <members>FP_Investment_Valuation__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -15,31 +17,27 @@
     <types>
         <members>FP_Transaction__c</members>
         <members>FP_Investment__c</members>
+        <members>FP_Investment_Valuation__c</members>
         <name>CustomTab</name>
     </types>
     <types>
+        <members>TransactionTrigger</members>
+        <name>ApexTrigger</name>
+    <types>
         <members>FP_Transaction__c-Transaction Layout</members>
+        <members>FP_Instrument__c-Instrument Layout</members>
+        <members>FP_Investment__c-Investment Layout</members>
+        <members>FP_Investment_Valuation__c-Investment Valuation Layout</members>
         <name>Layout</name>
     </types>
     <types>
         <members>Financial_Planner</members>
         <name>CustomApplication</name>
     </types>
-    
     <types>
         <members>fpUploadFile</members>
+        <members>fpShowTables</members>
         <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>FP_Transaction__c.Amount__c</members>
-        <members>FP_Transaction__c.External_Id__c</members>
-        <members>FP_Transaction__c.Description__c</members>
-        <members>FP_Transaction__c.Reference_Number__c</members>
-        <members>FP_Transaction__c.Transaction_Date__c</members>
-        <members>FP_Transaction__c.Type__c</members>
-        <members>FP_Transaction__c.UPI_Payment__c</members>
-        <members>FP_Transaction__c.Closing_Balance__c</members>
-        <name>CustomField</name>
     </types>
     <types>
         <members>Financial_Planner</members>

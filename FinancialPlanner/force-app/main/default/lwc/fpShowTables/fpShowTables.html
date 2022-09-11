@@ -1,16 +1,18 @@
 <template>
+  <div class="combo">
     <lightning-combobox
-           name="Duration"
-           label="Duration"
-           value={durationValue}
-           placeholder="Select Duration"
-           options={durationOptions}
-           onchange={handleDurationChange}>
+      name="Duration"
+      label="Duration"
+      value={durationValue}
+      placeholder="Select Duration"
+      options={durationOptions}
+      onchange={handleDurationChange}
+    >
     </lightning-combobox>
-    <lightning-card title='Sample Chart'>
-      <div>
-        <canvas class="donut" lwc:dom="manual"></canvas>
-      </div>
-    </lightning-card>
+  </div>
+  <lightning-card title="Sample Chart">
+    <div>
+      <canvas class="chart" lwc:dom="manual"></canvas>
+    </div>
+  </lightning-card>
 </template>
-
